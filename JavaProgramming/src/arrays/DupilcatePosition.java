@@ -8,13 +8,13 @@ public class DupilcatePosition {
 
 	public static void main(String[] args) {
 		int[] a = {1,2,3,4,4,3,5,6,1,3,5 };
-		LinkedHashMap<Integer, ArrayList> hash = new LinkedHashMap();
+		LinkedHashMap<Integer, ArrayList> hash = new LinkedHashMap<>();
 		for(int i=0; i<a.length; i++) {
 			if(hash.containsKey(a[i])) {
 				hash.get(a[i]).add(i);
 			}
 			else {
-				hash.put(a[i], new ArrayList());
+				hash.put(a[i], new ArrayList<>());
 			}
 		}
 		
@@ -29,13 +29,13 @@ public class DupilcatePosition {
 class DuplicateIndexPrinter {
     public static void main(String[] args) {
         int[] a = {1, 2, 3, 4, 4, 3, 5, 6, 1, 3, 5};
-        LinkedHashMap<Integer, ArrayList> hash = new LinkedHashMap();
+        LinkedHashMap<Integer, ArrayList> hash = new LinkedHashMap<>();
 
         for (int i = 0; i < a.length; i++) {
             if (hash.containsKey(a[i])) {
                 hash.get(a[i]).add(i);  // Only add duplicate positions
             } else {
-                hash.put(a[i], new ArrayList());  // Initialize list
+                hash.put(a[i], new ArrayList<>());  // Initialize list
             }
         }
 

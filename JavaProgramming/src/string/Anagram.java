@@ -1,4 +1,4 @@
-package string;
+ package string;
 
 import java.util.Arrays;
 
@@ -8,6 +8,9 @@ public class Anagram {
 		
 		String s1= "Read";
 		String s2= "Dear";
+		
+		s1= s1.replaceAll(" ", "");
+		s2=s2.replaceAll(" ","");
 		
 		if(s1.length() == s2.length()) {
 			

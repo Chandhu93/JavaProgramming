@@ -7,7 +7,7 @@ public class OccurenceOfChara {
 	public static void main(String[] args) {
 		
 		String s= "aabbabac";
-		LinkedHashMap<Character , Integer> hash = new LinkedHashMap() ;
+		LinkedHashMap<Character , Integer> hash = new LinkedHashMap<>() ;
 		for(int i=0; i<s.length(); i++) {
 			
 			char ch = s.charAt(i);

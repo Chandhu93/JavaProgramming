@@ -8,7 +8,7 @@ public class PrintDuplicate {
 	public static void main(String[] args) {
 		
 		String s= "aabbabactteeddio";
-		LinkedHashMap<Character , Integer> hash = new LinkedHashMap() ;
+		LinkedHashMap<Character , Integer> hash = new LinkedHashMap<>() ;
 		for(int i=0; i<s.length(); i++) {
 			
 			char ch = s.charAt(i);
